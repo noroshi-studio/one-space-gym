@@ -4,15 +4,15 @@
   document.documentElement.classList.add('js');
   const intro = document.querySelector('.site-intro');
   if (intro) {
-    if (document.documentElement.classList.contains('skip-site-intro') || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    if (document.documentElement.classList.contains('skip-site-intro')) {
       intro.remove();
     } else {
-      try { sessionStorage.setItem('osgIntroSeen', '1'); } catch (_) {}
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       const finish = () => { if (intro.isConnected) intro.remove(); };
       intro.querySelector('.site-intro__skip')?.addEventListener('click', finish);
       intro.addEventListener('animationend', (event) => { if (event.target === intro) finish(); });
       window.addEventListener('pageshow', (event) => { if (event.persisted) finish(); }, { once: true });
-      window.setTimeout(finish, 3100);
+      window.setTimeout(finish, reduceMotion ? 1200 : 3100);
     }
   }
   const toggle = document.querySelector('.menu-toggle');

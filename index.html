@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#191a19">
-<script>try{var osgNavigation=performance.getEntriesByType('navigation')[0];if(location.hash||matchMedia('(prefers-reduced-motion: reduce)').matches||(sessionStorage.getItem('osgIntroSeen')&&osgNavigation&&osgNavigation.type!=='reload'))document.documentElement.classList.add('skip-site-intro')}catch(e){}</script>
+<script>try{if(location.hash&&new URLSearchParams(location.search).get('intro')!=='1')document.documentElement.classList.add('skip-site-intro')}catch(e){}</script>
 <title>ONE SPACE GYM｜自然の中の完全貸切ジム・福岡県直方市</title>
 <meta name="description" content="ONE SPACE GYMは福岡県直方市の自然の中にある、ジムスペース完全貸切のジム。ひとりでも、友人やパートナーとも、自分たちのペースで。YOUR MOMENT. 現在は開業準備中です。">
 <meta property="og:type" content="website">
@@ -12,11 +12,11 @@
 <meta property="og:title" content="ONE SPACE GYM｜YOUR MOMENT">
 <meta property="og:description" content="ONE SPACE GYMは福岡県直方市の自然の中にある、ジムスペース完全貸切のジム。ひとりでも、友人やパートナーとも、自分たちのペースで。YOUR MOMENT. 現在は開業準備中です。">
 <meta property="og:locale" content="ja_JP">
-<link rel="stylesheet" href="assets/css/site.css">
-<script src="assets/js/site.js" defer></script>
+<link rel="stylesheet" href="assets/css/site.css?v=20261002">
+<script src="assets/js/site.js?v=20261002" defer></script>
 </head>
 <body >
-<div class="site-intro" aria-label="ONE SPACE GYMのオープニング"><div class="site-intro__inner"><span class="logo-plaque logo-plaque--intro"><img src="assets/images/one-space-gym-logo-original.jpg" alt="ONE SPACE GYM — YOUR MOMENT" width="1076" height="650" decoding="async"></span><p class="site-intro__tagline">YOUR MOMENT<span>.</span></p></div><button class="site-intro__skip" type="button" aria-label="オープニングをスキップ">SKIP <span aria-hidden="true">↗</span></button></div><a class="skip-link" href="#main">本文へスキップ</a>
+<div class="site-intro" aria-label="ONE SPACE GYMのオープニング"><div class="site-intro__inner"><span class="logo-plaque logo-plaque--intro"><img src="assets/images/one-space-gym-logo-original.jpg" alt="ONE SPACE GYM — YOUR MOMENT" width="1076" height="650" decoding="sync" fetchpriority="high"></span><p class="site-intro__tagline">YOUR MOMENT<span>.</span></p></div><button class="site-intro__skip" type="button" aria-label="オープニングをスキップ">SKIP <span aria-hidden="true">↗</span></button></div><a class="skip-link" href="#main">本文へスキップ</a>
 <header class="site-header">
 <a class="brand" href="./index.html" aria-label="ONE SPACE GYM トップページ"><span class="logo-plaque logo-plaque--small"><img src="assets/images/one-space-gym-logo-original.jpg" alt="ONE SPACE GYM — YOUR MOMENT" width="1076" height="650" decoding="async"></span><span><strong>ONE SPACE GYM</strong><small>YOUR MOMENT.</small></span></a>
 <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"><span class="menu-icon" aria-hidden="true"></span><span class="menu-label">メニュー</span></button>
